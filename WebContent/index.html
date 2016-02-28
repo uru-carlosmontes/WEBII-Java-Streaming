@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Video &; Audio</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8"/>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+	<h1 class="title">Streaming Video & Audio</h1>
+	<hr />
+	<div class="buttons">
+		<button onclick="getVideo()">GET VIDEO</button>
+		<button onclick="getAudio()">GET AUDIO</button>
+	</div>
+	<br />
+	<div class="video-container">
+		<video id="video" width='500px' height='500px' controls autoplay></video>
+	</div>
+	<div class="audio-container">
+		<audio id="audio" controls autoplay></audio>
+		<h3>Instrucciones</h3>
+		<p>
+			Para el correcto funcionamiento de esta prueba <br />
+			debe colocar un <b>video</b> y un <b>audio</b> <br />
+			directamente en la carpeta de eclipse (si es que usa <br />
+			este IDE) de lo contrario, debe cambiar la referencia <br />
+			en el codigo del servidor, en el codigo de ejemplo <br />
+			los archivos tienen los nombres <b>video.mp4</b> y <br />
+			<b>audio.mp3</b> si lo desea puede cambiarlo.
+		</p>
+	</div>
+	<script>
+		function $ (id) {
+			return document.getElementById(id);
+		}
+		
+		function getVideo() {
+			$("video").src = "./video";
+		}
+		
+		function getAudio() {
+			$("audio").src = "./audio";
+		}
+		
+	</script>
+</body>
+</html>

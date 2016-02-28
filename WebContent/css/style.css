@@ -1,0 +1,28 @@
+.title {
+	text-align: center;
+}
+
+.buttons {
+	text-align: center;
+}
+
+button {
+	border: 0;
+	padding: 10px;
+	margin: 10px;
+	background-color: #6BC2FF;
+	font-family: "Consolas";
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.video-container {
+	float: left;
+	border: 1px solid;
+	margin-left: 10px;
+	margin-right: 20px;
+}
+
+.audio-container {
+	text-align: center;
+}
