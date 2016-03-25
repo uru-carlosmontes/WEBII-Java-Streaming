@@ -35,7 +35,7 @@ public class Audio extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		String audioFilename = URLDecoder.decode("audio.mp3", "UTF-8");
-	    String audioPath = System.getProperty("user.dir");
+	    String audioPath = "c:\\test\\";
 		Path audio = Paths.get(audioPath, audioFilename);
 		
 		int length = (int) Files.size(audio);
