@@ -34,8 +34,8 @@ public class Video extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		String videoFilename = URLDecoder.decode("HXH 02 [animeolk.blogspot.com].mp4", "UTF-8");
-	    String videoPath = "C:\\Users\\Carlos\\Videos\\Hunter X Hunter";
+		String videoFilename = URLDecoder.decode("video.mp4", "UTF-8");
+	    String videoPath = "C:\\test";
 		Path video = Paths.get(videoPath, videoFilename);
 		
 		int length = (int) Files.size(video);
